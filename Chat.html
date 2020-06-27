@@ -1,0 +1,90 @@
+<!Doctype Html>
+<html>
+<Head><title>bot</title>
+    <link rel="stylesheet" href="brainedit.css">
+<script>
+know={
+ "ok" :"talk" ,
+"Hello":"Bot:Hi how are you !",
+"hello":"hi how are you",
+"Hello chat bot":"Hi how are you!",
+"What is your name":"Bot:I am pRoBot7080 ",
+"What is your name?":"Bot:I am pRoBot7080 ",
+"what is your name":"Bot:I am pRoBot7080 ",
+"what is your name?":"Bot:I am pRoBot7080 ",
+"Do you like your name?":"Bot:yes",
+"what are you?":"Bot:I am Rayna's assitant",
+"i am happy":"good",
+"I am happy":"good",
+"What are you?":"Bot:I am Rayna's assitant",
+"what are you":"Bot:I am Rayna's assitant",
+"who are you":"Bot:I am Rayna's assitant",
+"who are you?":"Bot:I am Rayna's assitant",
+"Who are you":"Bot:I am Rayna's assitant",
+"Who are you?":"Bot:I am Rayna's assitant",
+"what is your age?":"Bot:my age is 1 year",
+"How are you":"Bot:i am fine how about you?",
+"I am fine":"Bot:good",
+"I am not good":"Bot:ok",
+"I am normal":"Bot:ok",
+"what do you do":"Bot:nothing",	
+"why":"Bot:cause Iam programed like that ",
+"Why":"Bot:cause Iam programed like that ",
+"Why?":"Bot:cause  Iam programed like that",
+"why?":"Bot:cause  Iam programed like that ",
+"what is 1+1":"2",
+"i am fine how are you":"Bot:I am fine",
+"I am fine how are you":"Bot:I am fine",
+"i am fine how are you?":"Bot:I am fine",
+"I am fine how are you?":"Bot:I am fine",
+"I am fine how about you?":"Bot:I am fine",
+"i am fine how about you?":"Bot:I am fine",
+"i am fine how about you":"Bot:I am fine",
+"I am fine how about you":"Bot:I am fine",
+"what do you eat":"electercity",
+"OK":"Bot:OK",
+"Ok":"Bot:OK",
+"ok":"Bot:OK",
+"fine":"Bot:good",
+" Fine ":"Bot:good",
+"how are you":"Bot:good",
+"How are you":"Bot:good",
+"How about  you":"Bot:I am fine",
+"how are you?":"Bot:I am fine",
+"How are you?":"Bot:I am fine",
+"How about you?":"Bot:I am fine",
+"tell me a joke":"Bot:Sorry the one who has created me does not allows me to crack jokes",
+"Who has created you":"Bot:Shaurya Chutani",
+"Who has created you?":"Bot:Shaurya Chutani",
+"who has created you":"Bot:Shaurya Chutani",
+"who has created you?":"Bot:Shaurya Chutani",
+"who created you":"Shaurya Chutani",
+"who created you?":"Shaurya Chutani",
+"Who created you":"Shaurya Chutani",
+"Who created you?":"Shaurya Chutani",
+"i am fine":"good",
+"good":" Bot:thank you:)",
+"Good":" Bot:thank you:)"
+}
+function talk(){
+var user=document.getElementById("userLog").value;
+document.getElementById("userLog").value="";
+document.getElementById("chatLog").innerHTML+=user+"<br>";
+if(user in know){
+document.getElementById("chatLog").innerHTML+=know[user]+"<br>";
+}
+else 
+
+{
+document.getElementById("chatLog").innerHTML += "Bot:I don't understand... sorry<br>";
+}
+}
+</script>
+</head>
+<body background="botbg.png">
+
+<p id="chatLog">Chat Bot By Shaurya Chutani.Type Hello to start <br></p>
+<input id="userLog" type="text" onkeydown="if(event.keyCode==13){talk()}">
+
+</body>
+</html>
